@@ -8,10 +8,8 @@ function checkAnswer() {
         feedback.textContent = 'Correct! Well done.';
     }
     else {
-        feedback.textContent = 'That\'s incorrect. Try again!';
+        feedback.textContent = "That's incorrect. Try again!";
     }
 }
 
-const submitAnswer = document.getElementById('submit-answer');
-
-submitAnswer.addEventListener('click', checkAnswer);
+document.getElementById('submit-answer').addEventListener('click', checkAnswer);
